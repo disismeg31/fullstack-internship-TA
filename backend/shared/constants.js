@@ -13,7 +13,8 @@ const CONSTANTS = {
         incidents:{
             get_Unresolved_Incidents:'', //GET /api/incidents?resolved=false
             insert_Incidents:'',  // POST /api/incidents
-            resolve_Incidents:'', //PATCH /api/incidents/:id/resolve
+            resolve_Incidents:'/:id/resolve', //PATCH /api/incidents/:id/resolve
+            delete_Incidents:'',//delete all incidents
         },
         cameras:{
             get_Cameras:'', // GET /api/cameras

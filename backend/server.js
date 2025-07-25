@@ -11,6 +11,8 @@ connectToDB()
 app.use(express.json());
 app.use(cors());
 
+app.use('/public',express.static('public'))
+
 let indexRouter = require('./routes/index.routes.js');
 
 app.use('',indexRouter);

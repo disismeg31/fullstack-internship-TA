@@ -9,4 +9,6 @@ router.route(CONSTANTS.subUrls.incidents.insert_Incidents).post(incidentControll
 
 router.route(CONSTANTS.subUrls.incidents.resolve_Incidents).patch(incidentController.resolveIncidents);
 
+router.route(CONSTANTS.subUrls.incidents.delete_Incidents).delete(incidentController.deleteIncidents);
+
 module.exports = router;
