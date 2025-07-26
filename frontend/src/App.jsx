@@ -1,10 +1,17 @@
  import './App.css'
-
+import Dashboard from './components/Dashboard'
+import Navbar from './components/Navbar'
+import DurationProvider from './context/DurationProvider'
 function App() {
 
   return (
     <>
-       <p className='text-5xl font-semibold'>Cameras</p>
+    <DurationProvider>
+    <div className='flex flex-col'>
+      <Navbar/>
+      <Dashboard/>
+    </div>
+    </DurationProvider>  
     </>
   )
 }

@@ -1,12 +1,81 @@
-# React + Vite
+# 🚨 Incident Monitoring Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🛠️ Tech Stack
 
-Currently, two official plugins are available:
+- **Frontend**: React (with Vite)
+- **Styling**: Tailwind CSS
+- **Notifications**: Toastify / Material UI
+- **API Handling**: Axios
+- **Backend**: Express + Node.js + MongoDB Atlas
+- **Deployment**: Vercel
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Fetch and display incidents from API
+- Mark incidents as resolved
+- Manage loading states
+- Toast notifications for success/failure
+- Fully responsive UI
+
+---
+
+## ⚙️ Tech Decisions
+
+- **Frontend Framework**: React (with Vite for faster dev/build times)
+- **Backend**: Express (Node.js) with MongoDB Atlas
+- **Styling**: Tailwind CSS for utility-first and responsive design
+- **HTTP Requests**: Axios
+- **State Management**: `useState` , `useEffect` and `useContext`  (no global state library used)
+- **Notifications**: Material UI (toast messages positioned top-right)
+- **Deployment -Frontend**: Vercel
+- **Environment Variables**: Managed via `import.meta.env` (e.g., `VITE_API_URL`)
+- **Deployment -Backend**: Render
+- **Environment Variables**: Managed via `process.env.MONGODB_URI` (e.g., `MONGODB_URI`)
+
+---
+
+## 🚀 Deployment Instructions
+
+### ✅ Deploying with Vercel
+
+1. Connect your GitHub repo to [Vercel](https://vercel.com)
+2. In the Vercel dashboard, set environment variables:
+   ```env
+   VITE_API_URL=https://your-backend-api.com
+
+## 💻 Run Locally
+
+Follow these steps to run the project locally:
+
+### 🔧 Prerequisites
+
+- Node.js installed
+- Backend API accessible (local or deployed)
+
+### 🛠 Steps
+
+1. **Clone the repo**
+
+```bash
+git clone https://github.com/your-username/incident-dashboard.git
+```
+2. **Navigate to the project directory**
+```
+cd frontend
+```
+3. **Install dependencies**
+npm install
+
+4. **Create a .env file and add your backend API URL:**
+```
+VITE_API_URL=https://your-backend-api.com
+```
+5. **Run the development server**
+```
+npm run dev
+```
+
+
+
