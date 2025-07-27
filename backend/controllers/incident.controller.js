@@ -26,7 +26,7 @@ incident.save()
 function getUnresolvedIncidents(req,res){
     const {resolved} = req.query;
     if(resolved !== undefined && resolved === 'false'){
-        Incident.find({resolved:false}).sort({timestamp:-1})
+        Incident.find({resolved:false}).sort({createdAt:-1})
         .then((result)=>{
 
             if(result.length>0){
