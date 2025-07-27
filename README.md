@@ -61,7 +61,7 @@ Follow these steps to run the project locally:
 1. **Clone the repo**
 
 ```bash
-git clone https://github.com/your-username/incident-dashboard.git
+git clone https://github.com/disismeg31/fullstack-internship-TA.git
 ```
 2. **Navigate to the project directory**
 ```
